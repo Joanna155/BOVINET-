@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "io.ionic.starter"
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "io.ionic.starter"
+        minSdk 22
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':capacitor-android')
+    
+    // USAR ESTAS VERSIONES COMPATIBLES CON SDK 33:
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.core:core:1.9.0'
+}
+
+apply from: 'capacitor.build.gradle'
