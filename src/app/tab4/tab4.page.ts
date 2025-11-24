@@ -96,8 +96,7 @@ interface NotificationSettings {
     IonSegment,
     IonSegmentButton,
     IonNote,
-    IonAvatar,
-    IonicModule
+    IonAvatar
   ],
 })
 export class Tab4Page implements OnInit, OnDestroy {
@@ -490,13 +489,13 @@ export class Tab4Page implements OnInit, OnDestroy {
   getNotificationColor(tipo: string): string {
     switch (tipo) {
       case "Celo":
-        return "#eb445a";
+        return "#FEF08A";
       case "Vacunación":
-        return "#3880ff";
+        return "#BFDBFE";
       case "Inseminación":
-        return "#2dd36f";
+        return "#BBF7D0";
       case "Parto":
-        return "#ffc409";
+        return "#EE4057";
       case "Sistema":
         return "#92949c";
       default:

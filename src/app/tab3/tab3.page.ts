@@ -46,8 +46,7 @@ import {
   logOutOutline,
   todayOutline,
   chevronBackOutline,
-  chevronForwardOutline
-} from 'ionicons/icons';
+  chevronForwardOutline, documentTextOutline, medkitOutline, leafOutline } from 'ionicons/icons';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 import { DataShareService } from '../services/data-share.service';
@@ -197,26 +196,7 @@ export class Tab3Page implements OnInit, OnDestroy {
     private reportService: ReportService,
     private loadingController: LoadingController
   ) {
-    addIcons({
-      calendarOutline,
-      addOutline,
-      timeOutline,
-      heartOutline,
-      medicalOutline,
-      flowerOutline,
-      personOutline,
-      createOutline,
-      trashOutline,
-      closeOutline,
-      saveOutline,
-      listOutline,
-      gridOutline,
-      checkmarkOutline,
-      logOutOutline,
-      todayOutline,
-      chevronBackOutline,
-      chevronForwardOutline
-    });
+    addIcons({calendarOutline,documentTextOutline,logOutOutline,addOutline,flowerOutline,heartOutline,medkitOutline,timeOutline,todayOutline,leafOutline,listOutline,gridOutline,checkmarkOutline,createOutline,trashOutline,chevronBackOutline,chevronForwardOutline,closeOutline,saveOutline,medicalOutline,personOutline});
   }
 
   async ngOnInit() {

@@ -50,10 +50,10 @@ import { DataShareService } from "../services/data-share.service";
   styleUrls: ["tab2.page.scss"],
   standalone: true,
   imports: [
-    CommonModule, FormsModule, IonHeader, IonToolbar, IonTitle, IonContent,
+    CommonModule, FormsModule, IonToolbar, IonTitle, IonContent,
     IonCard, IonCardContent, IonItem, IonLabel, IonInput, IonButton, IonIcon,
     IonSelect, IonSelectOption, IonBadge, IonSearchbar, IonFab, IonFabButton,
-    IonModal, IonButtons, IonTextarea, IonGrid, IonRow, IonCol, IonicModule
+    IonModal, IonButtons, IonTextarea, IonGrid, IonRow, IonCol, IonHeader
   ],
 })
 export class Tab2Page implements OnInit {

@@ -1,1 +1,108 @@
+ion-tab-button ion-icon {
+// Ajusta el tamaño del ícono
+  font-size: 20px;
+  text-align: center;
+// Si necesitas más control
+  width: 24px;
+  height: 24px;
+    }
+    img {
+      width: 13px;
+      height: 13px;
+      margin-right: 1px; // Añade un espacio entre la imagen y el texto
+      text-align: center;
+    }
+ion-tab-button ion-label {
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+   /* Opcional: Puedes también cambiar el tamaño de la fuente si lo deseas */
+  font-size: 13px;  
+  text-align: center;
+  
+}
+
+/* Forzar que la barra inferior sea blanca para las cuatro pestañas
+   y que se mantenga blanca al hacer click/seleccionar */
+ion-tab-bar {
+  --background: #f1f1f1;         /* Fondo blanco */
+  --background-focused: rgb(210, 218, 211)antener blanco cuando está enfocado */
+  --color: #000000;              /* Iconos/labels no seleccionados (negro) */
+  --color-selected: #000000;     /* Iconos/labels seleccionados (negro) */
+  --border: 1px solid #e0e0e0;   /* Separación tipo barra en la parte superior */
+}
+
+/* Asegurar que los botones dentro del tab-bar no cambien el fondo */
+ion-tab-bar ::slotted(ion-tab-button),
+ion-tab-bar ::slotted(ion-tab-button.ion-focused),
+ion-tab-bar ::slotted(ion-tab-button.tab-selected) {
+  background: transparent !important;
+  color: var(--color-selected) !important;
+}
+
+/* Asegurar que todos los botones dentro del tab-bar usen texto/íconos negros
+   y no cambien el fondo al seleccionarse */
+ion-tab-bar ::slotted(ion-tab-button),
+ion-tab-bar ::slotted(ion-tab-button.ion-focused) {
+  background: transparent !important;
+  color: var(--color) !important;
+}
+
+/* Forzar color para labels e iconos dentro de los botones */
+ion-tab-bar ::slotted(ion-tab-button) ion-label,
+ion-tab-bar ::slotted(ion-tab-button) ion-icon {
+  color: inherit !important;
+}
+
+ion-tab-button ion-icon {
+// Ajusta el tamaño del ícono
+  font-size: 20px;
+  text-align: center;
+// Si necesitas más control
+  width: 24px;
+  height: 24px;
+    }
+    img {
+      width: 13px;
+      height: 13px;
+      margin-right: 1px; // Añade un espacio entre la imagen y el texto
+      text-align: center;
+    }
+ion-tab-button ion-label {
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+   /* Opcional: Puedes también cambiar el tamaño de la fuente si lo deseas */
+  font-size: 13px;  
+  text-align: center;
+  
+}
+
+/* Forzar que la barra inferior sea blanca para las cuatro pestañas
+   y que se mantenga blanca al hacer click/seleccionar */
+ion-tab-bar {
+  --background: #f1f1f1;         /* Fondo blanco */
+  --background-focused: rgb(210, 218, 211)antener blanco cuando está enfocado */
+  --color: #000000;              /* Iconos/labels no seleccionados (negro) */
+  --color-selected: #000000;     /* Iconos/labels seleccionados (negro) */
+  --border: 1px solid #e0e0e0;   /* Separación tipo barra en la parte superior */
+}
+
+/* Asegurar que los botones dentro del tab-bar no cambien el fondo */
+ion-tab-bar ::slotted(ion-tab-button),
+ion-tab-bar ::slotted(ion-tab-button.ion-focused),
+ion-tab-bar ::slotted(ion-tab-button.tab-selected) {
+  background: transparent !important;
+  color: var(--color-selected) !important;
+}
+
+/* Asegurar que todos los botones dentro del tab-bar usen texto/íconos negros
+   y no cambien el fondo al seleccionarse */
+ion-tab-bar ::slotted(ion-tab-button),
+ion-tab-bar ::slotted(ion-tab-button.ion-focused) {
+  background: transparent !important;
+  color: var(--color) !important;
+}
+
+/* Forzar color para labels e iconos dentro de los botones */
+ion-tab-bar ::slotted(ion-tab-button) ion-label,
+ion-tab-bar ::slotted(ion-tab-button) ion-icon {
+  color: inherit !important;
+}
 

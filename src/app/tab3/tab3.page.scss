@@ -17,6 +17,28 @@
     font-size: 1.2rem;
     font-weight: bold;
 
+      .app-logo {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+
+      
+       img {
+        height: 100px;
+        max-height: 250px; 
+        width: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0;
+        padding: 0;
+        transition: none; 
+      }
+    }
+  }
+
+
     ion-icon {
       font-size: 1.3rem;
     }
@@ -45,7 +67,6 @@
       }
     }
   }
-}
 
 // Contenedor principal
 .main-container {
@@ -307,19 +328,19 @@
         margin-bottom: 5px;
 
         &.celo {
-          background: #eb445a;
+          background: #FEF08A;
         }
 
         &.vacunacion {
-          background: #3880ff;
+          background: #BFDBFE;
         }
 
         &.inseminacion {
-          background: #2dd36f;
+          background: #BBF7D0;
         }
 
         &.parto {
-          background: #ffc409;
+          background: #EE4057;
         }
       }
 
@@ -344,20 +365,20 @@
           
           &.programada,
           &.programado {
-            color: #74b9ff;
+            color: #BFDBFE;
           }
 
           &.realizada,
           &.realizado {
-            color: #00b894;
+            color: #BBF7D0;
           }
 
           &.pendiente {
-            color: #fdcb6e;
+            color: #FEF08A;
           }
 
           &.alerta {
-            color: #e17055;
+            color: #EE4057;
           }
         }
       }

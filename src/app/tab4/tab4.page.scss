@@ -6,6 +6,42 @@
   width: 100% !important;
   max-width: 100% !important;
 }
+     .icono-vaca-stat {
+    /* Define un tamaño para el ícono */
+    width: 108px; /* Ajusta este valor */
+    height: 108 px;
+    /* Agrega un poco de margen a la derecha para separarlo del texto */
+    margin-right: 3%; 
+}
+/* Estilos para el contenedor para alinear el ícono y el texto */
+    .stat-item {
+    display: flex; /* Alinea la imagen y el texto horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.icono-calendario-stat {
+/* Define un tamaño para el ícono */
+    width: 115px;  /* Ajusta este valor según necesites */
+    height: 90px;
+    margin-right: 0px; 
+}
+.app-logo {
+      display: flex;
+      align-items: center;
+      margin: 4px ;
+      padding: 5px;
+      line-height: 0;
+}
+      img {
+        height: 95px;
+        max-height: 250px; 
+        width: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0;
+        padding: 0;
+        transition: none; 
+      }
+    
 
 // Header mejorado
 .header-content {

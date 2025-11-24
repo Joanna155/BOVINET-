@@ -3,7 +3,9 @@
     <ion-title>
       <div class="header-content">
         <div class="header-left">
-          <strong>AGRODATA</strong>
+         <div class="app-logo">
+            <img src="assets/img/Bovinet (2).png">
+          </div>
         </div>
         <div class="header-right">
           <span>RANCHO LA VAQUITA FELIZ</span>
@@ -280,16 +282,17 @@
           <ion-row>
             <ion-col size="6">
               <div class="stat-item">
-                <ion-icon name="paw-outline" color="primary"></ion-icon>
+                <!--<ion-icon name="paw-outline" color="primary"></ion-icon> !-->
+                <img src="assets/img/Vaquita1.png" alt="Total de animales" class="icono-vaca-stat">
                 <div class="stat-info">
                   <span class="stat-number">{{ appInfo.totalAnimals }}</span>
-                  <span class="stat-label">Animales</span>
+                  <span class="stat-label"> Ganado</span>
                 </div>
               </div>
             </ion-col>
             <ion-col size="6">
               <div class="stat-item">
-                <ion-icon name="calendar-outline" color="success"></ion-icon>
+                <img src="assets/img/calendario.png" alt="Total de animales" class="icono-calendario-stat">
                 <div class="stat-info">
                   <span class="stat-number">{{ appInfo.totalEvents }}</span>
                   <span class="stat-label">Eventos</span>
@@ -358,13 +361,22 @@
       </ion-card-header>
       <ion-card-content>
         <p class="legal-text">
-          <strong>AGRODATA - Sistema de Control Bovino</strong><br>
-          Desarrollado para la gestión integral del ganado bovino.<br><br>
-          
-          Esta aplicación funciona completamente offline y todos los datos se almacenan localmente en el dispositivo.<br><br>
-          
-          © 2025 - Todos los derechos reservados
-        </p>
+        <b>AGRODATA DIGITAL - Sistema de Control Bovino</b> <br><br>
+  Desarrollado para la gestión integral del ganado bovino.<br><br>
+
+ <b> Modelo de Datos Offline:</b> <br><br>
+  Esta aplicación funciona completamente <b>offline</b>. Todos los datos de gestión (animales, registros, movimientos) se <b>almacenan exclusivamente de forma local en el dispositivo del usuario y no son transmitidos a servidores externos</b>.<br><br>
+
+ <b>Contacto y Soporte: </b><br>
+  Para preguntas, soporte técnico o reportes de errores, por favor contáctenos a:<br>
+  <b>Email:</b> agrodata.digital-hotmail.com<br><br>
+
+  <b>Legal:</b><br>
+ <b> Versión 1.0.0 (Build 20250115) </b><br>
+  <!--<b>[ENLACE A TÉRMINOS Y CONDICIONES]</b><br>
+  <b>[ENLACE A POLÍTICA DE PRIVACIDAD]</b><br> -->
+ <b>  © 2025 AGRODATA DIGITAL. Todos los derechos reservados. </b> <br>
+</p>
       </ion-card-content>
     </ion-card>
   </div>

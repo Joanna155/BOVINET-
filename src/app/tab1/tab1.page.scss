@@ -3,25 +3,33 @@
   padding: 10px;
 }
 
-// Header personalizado
+// (Total de ganados. hembras, machos, reproductores)
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0 10px;
+  width: 95%;
+  padding: px;
+  min-height: 56px;
+
 
   .header-left {
     .app-logo {
-      font-size: 1.8rem;
-      font-weight: 900;
-      color: white;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-      letter-spacing: 1px;
-      background: rgba(0, 0, 0, 0.2);
-      padding: 8px 16px;
-      border-radius: 8px;
-      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      margin: 0; 
+      padding: 0; 
+      line-height: 0; 
+    }
+     img {
+        height: 95px;
+        max-height: 250px; 
+        width: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0;
+        padding: 0;
+        transition: none; 
     }
   }
 

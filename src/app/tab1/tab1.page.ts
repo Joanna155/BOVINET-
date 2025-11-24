@@ -305,10 +305,10 @@ export class Tab1Page implements OnInit, OnDestroy {
 
   public getEventColor(tipo: string): string {
     const colors: {[key: string]: string} = {
-      'Celo': '#eb445a',
-      'Vacunación': '#3880ff',
-      'Inseminación': '#2dd36f',
-      'Parto': '#ffc409'
+      'Celo': '#FEF08A',
+      'Vacunación': '#BFDBFE',
+      'Inseminación': '#BBF7D0',
+      'Parto': '#EE4057'
     };
     return colors[tipo] || '#92949c';
   }

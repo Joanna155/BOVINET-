@@ -3,7 +3,9 @@
     <ion-title>
       <div class="header-content">
         <div class="header-left">
-          <strong>AGRODATA</strong>
+          <div class="app-logo">
+            <img src="assets/img/Bovinet (2).png">
+          </div>
         </div>
         <div class="header-right">
           <span>RANCHO LA VAQUITA FELIZ</span>
@@ -54,8 +56,7 @@
         [color]="selectedSexFilter === 'Hembra' ? 'success' : 'medium'"
         (click)="onSexFilterChange('Hembra')"
         class="sex-filter-btn">
-        <ion-icon name="female-outline" slot="start"></ion-icon>
-        Hembras ({{ totalHembras }})
+        🐄 Hembras ({{ totalHembras }})
       </ion-button>
       
       <ion-button 
@@ -63,8 +64,7 @@
         [color]="selectedSexFilter === 'Macho' ? 'tertiary' : 'medium'"
         (click)="onSexFilterChange('Macho')"
         class="sex-filter-btn">
-        <ion-icon name="male-outline" slot="start"></ion-icon>
-        Machos ({{ totalMachos }})
+        🐂 Machos ({{ totalMachos }})
       </ion-button>
     </div>
 
